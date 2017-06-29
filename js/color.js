@@ -90,7 +90,7 @@ setInterval(function() {
 		dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":" + Math.floor(aud.duration % 60);				
 	}
 
-}, 3000)
+}, 30)
 
 var prog = document.getElementById('prog');
 setInterval(function() {
