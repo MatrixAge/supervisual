@@ -68,8 +68,14 @@ setInterval(function() {
 	var second1 = Math.floor(aud.currentTime % 60);
 
 	if(second1 < 10) {
+		if(aud.currentTime==NaN){
+			aud.currentTime=0;
+		}
 		ctime.innerText = "0" + Math.floor(aud.currentTime / 60) + ":0" + Math.floor(aud.currentTime % 60);
 	} else {
+		if(aud.currentTime==NaN){
+			aud.currentTime=0;
+		}
 		ctime.innerText = "0" + Math.floor(aud.currentTime / 60) + ":" + Math.floor(aud.currentTime % 60);
 	}
 }, 100);
