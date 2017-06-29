@@ -68,8 +68,8 @@ window.onload = function() {
 			canvasCtx.closePath();
 
 			var rad;
-			if(array[10] > 200) {
-				rad = array[10] - 210;
+			if(array[3] > 200) {
+				rad = array[3] - 210;
 			} else {
 				rad = 0;
 			}
