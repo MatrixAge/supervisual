@@ -85,16 +85,12 @@ setInterval(function() {
 	if(second2 < 10) {
 		
 		dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":0" + Math.floor(aud.duration % 60);
-	} else {
-		
-		if(aud.duration=="NaN"){
-		dtime.innerText="00:00";
-	}else{
-		dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":" + Math.floor(aud.duration % 60);	
-	}		
+	} 
+	else {		
+		dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":" + Math.floor(aud.duration % 60);				
 	}
 
-}, 1000)
+}, 3000)
 
 var prog = document.getElementById('prog');
 setInterval(function() {
