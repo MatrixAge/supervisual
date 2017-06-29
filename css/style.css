@@ -46,7 +46,7 @@ blockquote {
 	top: 0;
 	left: 0;
 	background: #d33a31;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 #logo img{
@@ -72,15 +72,17 @@ blockquote {
 	line-height: 50px;
 	padding-left: 40px;
 	transition-duration: 0.5s;
+	opacity:0.6;
 }
 #catalog li:hover{
-	padding-left: 45px;
+	opacity:1;
 	transition-duration: 0.5s;
 }
 #catalog a{
 	color: whitesmoke;
 	text-decoration: none;
 	font-size: 12px;
+	
 	font-family: "microsoft yahei";
 }
 
