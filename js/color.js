@@ -81,16 +81,19 @@ setInterval(function() {
 }, 100);
 
 setInterval(function() {
-	if(aud.duration==NaN){
-		dtime.innerText="00:00";
-	}
+	
 	var second2 = Math.floor(aud.duration % 60);
 
 	if(second2 < 10) {
 		
 		dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":0" + Math.floor(aud.duration % 60);
 	} else {
-		dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":" + Math.floor(aud.duration % 60);
+		
+		if(aud.duration==NaN){
+		dtime.innerText="00:00";
+	}else{
+		dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":" + Math.floor(aud.duration % 60);	
+	}		
 	}
 
 }, 1000)
