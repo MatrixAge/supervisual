@@ -69,7 +69,7 @@ window.onload = function() {
 
 			var rad;
 			if(array[2] > 200) {
-				rad = array[2] - 210;
+				rad = array[2] - 200;
 			} else {
 				rad = 0;
 			}
