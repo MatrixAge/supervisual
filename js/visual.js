@@ -61,8 +61,8 @@ window.onload = function() {
 			var num = 0;
 			num = num + array[i];
 			canvasCtx.beginPath();
-			canvasCtx.arc(100, 120, array[17] / 3, 0, 2 * Math.PI);
-			canvasCtx.arc(290, 120, array[127] / 3, 0, 2 * Math.PI);
+			canvasCtx.arc(100, 120, array[45] / 3, 0, 2 * Math.PI);
+			canvasCtx.arc(290, 120, array[110] / 3, 0, 2 * Math.PI);
 			canvasCtx.fillRect(i * 3, 280, 1, array[i] / 8);
 			canvasCtx.fill();
 			canvasCtx.closePath();
