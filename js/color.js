@@ -79,23 +79,18 @@ setInterval(function() {
 }, 100);
 
 setInterval(function() {
-	
-	
-
-	if(aud.duration !== NaN) {
-		var second2 = Math.floor(aud.duration % 60);
+	var second2 = Math.floor(aud.duration % 60);
+	if(isNaN(aud.duration)) {
+		dtime.innerText = "00:00";
+	} else {
 		if(second2 < 10) {
 
 			dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":0" + Math.floor(aud.duration % 60);
 		} else {
 			dtime.innerText = "0" + Math.floor(aud.duration / 60) + ":" + Math.floor(aud.duration % 60);
 		}
-	}else{
-		dtime.innerText ="00:00";
 	}
-
-}, 1000)
-
+}, 1000);
 var prog = document.getElementById('prog');
 setInterval(function() {
 	prog.style.width = Math.ceil((aud.currentTime * 960 / aud.duration)) + "px";
