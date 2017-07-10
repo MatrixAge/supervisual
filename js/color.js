@@ -31,14 +31,14 @@ imgpre.onclick = function() {
 	aud.pause();
 	aud.src = "audio/spook.mp3";
 	songifo.innerText = "KSHMR-Spook";
-	content.style.backgroundImage="url(img/刚好遇见你.jpg)";
+	content.style.backgroundImage="url(http://osuultm42.bkt.clouddn.com/-5HH0Wo71hvy7tU2aNF6dQ%253D%253D%252F18671906464338386.jpg)";
 	aud.play();
 }
 imgnext.onclick = function() {
 	aud.pause();
 	aud.src = "audio/Tobu - Colors.mp3";
 	songifo.innerText = "Tobu-Colors";
-	content.style.backgroundImage="url(img/fade.jpg)";
+	content.style.backgroundImage="url(http://osuultm42.bkt.clouddn.com/cover.jpg)";
 	aud.play();
 }
 
