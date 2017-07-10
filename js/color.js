@@ -29,15 +29,15 @@ var content=document.getElementById('content');
 var songifo = document.getElementById('songifo');
 imgpre.onclick = function() {
 	aud.pause();
-	aud.src = "http://sc1.111ttt.com/2016/1/11/28/204281919253.mp3";
-	songifo.innerText = "刚好遇见你-李玉刚";
+	aud.src = "audio/spook.mp3";
+	songifo.innerText = "KSHMR-Spook";
 	content.style.backgroundImage="url(img/刚好遇见你.jpg)";
 	aud.play();
 }
 imgnext.onclick = function() {
 	aud.pause();
-	aud.src = "http://sc1.111ttt.com/2015/1/02/09/95091224402.mp3";
-	songifo.innerText = "Alan Walker-Fade";
+	aud.src = "audio/Tobu-Colors.mp3";
+	songifo.innerText = "Tobu-Colors";
 	content.style.backgroundImage="url(img/fade.jpg)";
 	aud.play();
 }
