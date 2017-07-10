@@ -36,7 +36,7 @@ imgpre.onclick = function() {
 }
 imgnext.onclick = function() {
 	aud.pause();
-	aud.src = "audio/Tobu-Colors.mp3";
+	aud.src = "audio/Tobu - Colors.mp3";
 	songifo.innerText = "Tobu-Colors";
 	content.style.backgroundImage="url(img/fade.jpg)";
 	aud.play();
