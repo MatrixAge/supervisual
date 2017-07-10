@@ -6,6 +6,7 @@ var img = document.getElementsByTagName('img');
 var n = 0;
 var volumn = document.getElementById('vol');
 var volvalue = 1;
+//监听鼠标点击事件（音量按钮）
 volumn.addEventListener("mousedown", function() {
 	if(volvalue) {
 		volvalue = 0;
@@ -17,7 +18,7 @@ volumn.addEventListener("mousedown", function() {
 		aud.volume = 1;
 	}
 })
-
+//音乐暂停，播放
 imgstop.onclick = function() {
 	if(aud.paused) {
 		aud.play();
@@ -27,6 +28,7 @@ imgstop.onclick = function() {
 }
 var content=document.getElementById('content');
 var songifo = document.getElementById('songifo');
+//上一首
 imgpre.onclick = function() {
 	aud.pause();
 	aud.src = "audio/spook.mp3";
@@ -34,6 +36,7 @@ imgpre.onclick = function() {
 	content.style.backgroundImage="url(http://osuultm42.bkt.clouddn.com/-5HH0Wo71hvy7tU2aNF6dQ%253D%253D%252F18671906464338386.jpg)";
 	aud.play();
 }
+//下一首
 imgnext.onclick = function() {
 	aud.pause();
 	aud.src = "audio/Tobu - Colors.mp3";
@@ -43,6 +46,7 @@ imgnext.onclick = function() {
 }
 
 var change;
+//播放按钮旋转特效
 aud.addEventListener("play", function(e) {
 	imgstop.src = "img/stop.svg";
 	clearInterval(change);
@@ -63,7 +67,7 @@ aud.addEventListener("pause", function(e) {
 
 var ctime = document.getElementById('currenttime');
 var dtime = document.getElementById('durationtime');
-
+//获取
 setInterval(function() {
 	var second1 = Math.floor(aud.currentTime % 60);
 
@@ -77,7 +81,7 @@ setInterval(function() {
 		ctime.innerText = "0" + Math.floor(aud.currentTime / 60) + ":" + Math.floor(aud.currentTime % 60);
 	}
 }, 100);
-
+//获取歌曲时长
 setInterval(function() {
 	var second2 = Math.floor(aud.duration % 60);
 	if(isNaN(aud.duration)) {
