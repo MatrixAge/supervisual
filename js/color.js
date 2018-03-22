@@ -31,7 +31,7 @@ var songifo = document.getElementById('songifo');
 //上一首
 imgpre.onclick = function() {
 	aud.pause();
-	aud.src = "audio/spook.mp3";
+	aud.src = "http://osuultm42.bkt.clouddn.com/Joel%20Adams%20-%20Please%20Don%27t%20Go.mp3";
 	songifo.innerText = "KSHMR-Spook";
 	content.style.backgroundImage="url(http://osuultm42.bkt.clouddn.com/-5HH0Wo71hvy7tU2aNF6dQ%253D%253D%252F18671906464338386.jpg)";
 	aud.play();
