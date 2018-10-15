@@ -1,2 +1,2 @@
 # supervisual
-this is a visal music project,click here:https://walkshadow.github.io/supervisual/
+this is a visual music project,click here to preview:https://walkshadow.github.io/supervisual/
